@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import QuotesAttemptedDisplay from '.././containers/quotes-attempted-display';
-import QuotesAttempted from '.././containers/quotes-attempted';
+import QuotesAttempted from '.././containers/quotes-attempted-button';
 import './app.css';
 
 const appStyle = {
@@ -11,9 +11,9 @@ export default class App extends Component {
   render() {
     return (
       <div style={appStyle}>
-        <QuotesAttemptedDisplay />
+        <QuotesAttemptedDisplay id='quotesAttemptedDisplay'/>
         <br></br>
-        <QuotesAttempted />
+        <QuotesAttempted id='quotesAttemptedButton'/>
       </div>
     );
   }

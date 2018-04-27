@@ -28,13 +28,13 @@ class QuotesAttempted extends Component {
                 })
                 
             //read the txt data
-            axios.get('./QTE.TXT')
-                .then(response => {
-                    console.log('response: ', response.data);
-                    // this.setState({attempted: response.data.quotesAttempted}, function() {
-                    //     this.props.getQuotesAttempted(this.state.attempted);
-                    // });
-                })
+            // axios.get('./QTE.TXT')
+            //     .then(response => {
+            //         console.log('response: ', response.data);
+            //         // this.setState({attempted: response.data.quotesAttempted}, function() {
+            //         //     this.props.getQuotesAttempted(this.state.attempted);
+            //         // });
+            //     })
         }
 
     }
@@ -50,10 +50,7 @@ function mapDispatchToProps(dispatch){
     return bindActionCreators({ getQuotesAttempted: getQuotesAttempted, getLastDateAttempted: getLastDateAttempted }, dispatch)
 }
 function mapStateToProps(state){
-    return {
-            quotesAttempted: state.quotesAttempted,
-            lastDateAttempted: state.lastDate
-    };
+    return {};
 }
 
 
