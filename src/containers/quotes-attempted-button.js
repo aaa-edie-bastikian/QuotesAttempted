@@ -19,7 +19,7 @@ class QuotesAttempted extends Component {
             e.preventDefault();
 
             console.log('get quotes attempted clicked')
-            let data = axios.get('./data-huon.json')
+            axios.get('./data-huon.json')
                 .then(response => {
                     this.setState({attempted: response.data.quotesAttempted, lastDate:response.data.lastDate}, function() {
                         this.props.getQuotesAttempted(this.state.attempted);

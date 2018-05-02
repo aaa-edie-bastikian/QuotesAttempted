@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 
 class QuotesAttemptedDisplay extends Component {
     render() {
+
+        console.log("quotes attempted display: ", this);
         if(!this.props.amount){
             return <div>Select an option</div>;
         }

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import QuotesAttemptedDisplay from '.././containers/quotes-attempted-display';
 import QuotesAttempted from '.././containers/quotes-attempted-button';
-import './app.css';
 
 const appStyle = {
   margin: '100px',
