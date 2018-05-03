@@ -10,7 +10,7 @@ class QuotesAttemptedDisplay extends Component {
         }
         return(
             <div>
-                <h6>{this.props.amount} Quotes Attempted as of {this.props.lastDate}</h6>
+                <h6 id="quotesCount">{this.props.amount} Quotes Attempted as of {this.props.lastDate}</h6>
             </div>
         )
     }

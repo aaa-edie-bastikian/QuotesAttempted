@@ -41,7 +41,7 @@ class QuotesAttempted extends Component {
     
     render() {
         return (
-            <button type='submit' onClick={this.updateQuotesAttempted}> Get Quotes Attempted </button>
+            <button id="totalQuotesButton" type='submit' onClick={this.updateQuotesAttempted}> Get Quotes Attempted </button>
         )
     }
 }
